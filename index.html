@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+ <header>
+     <div class="logo">
+         <h1 class="logo">Store.pk</h1>
+     </div>
+    <div class="search">
+        <input type="search" id="search" placeholder="search products">
+        <button type="button">Search</button>
+    </div>
+    <div class="login-register">
+    <button>Login</button>
+    <button>Register</button>
+    </div>
+    <!-- <div class="cart"> 
+       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+</svg>
+    </div> -->
+ </header>   
+ <main>
+     <div class="filters">
+         <h2>Filter By</h2>
+         <ul>
+            <li>
+                Price
+                <select>
+                    <option>$20</option>
+                    <option>$30</option>
+                    <option>$50</option>
+                    <option>$100</option>
+                </select>   
+            </li>
+            <li>Size
+                <select>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>13</option>
+                    <option>16</option>
+                </select>
+            </li>
+            <li>Color
+                <select>
+                    <option>Black</option>
+                    <option>Brown</option>
+                    <option>Blue</option>
+                    <option>Red</option>
+                </select>
+            </li>
+            <li>Brand
+                <select>
+                    <option>Cat</option>
+                    <option>Camel</option>
+                    <option>Service</option>
+                </select>
+            </li>
+         </ul>
+     </div>
+     <section class="products">
+        <div class="card">
+            <img src="./images/pexels-mstudio-1240892.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
+            <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+</svg></button>
+        </div> 
+         <div class="card">
+            <img src="./images//pexels-oluwaseun-duncan-186035.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
+                        <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+</svg></button>
+        </div> 
+         <div class="card">
+            <img src="./images/pexels-pixabay-267320.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
+                        <button class="add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+</svg>
+                        </button>
+                    
+        </div> 
+         <div class="card">
+            <img src="./images/pexels-ray-piedra-1456706.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
+                        <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+</svg></button>
+        </div> 
+         <div class="card">
+            <img src="./images/pexels-ray-piedra-1464625.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
+                        <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+</svg></button>
+        </div> 
+         <div class="card">
+            <img src="./images/pexels-web-donut-19090.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
+                        <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+</svg></button>
+        </div> 
+         <div class="card">
+            <img src="./images/pexels-zain-ali-1027130.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
+                        <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+</svg></button>
+        </div> 
+         <div class="card">
+            <img src="./images/radek-skrzypczak-WlB8TsI_th0-unsplash.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
+                        <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+</svg></button>
+        </div> 
+         <div class="card">
+            <img src="./images/revolt-164_6wVEHfI-unsplash.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
+                        <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+</svg></button>
+        </div>
+         <div class="card">
+            <img src="./images/usama-akram-kP6knT7tjn4-unsplash.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
+                        <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+</svg></button>
+        </div>  
+         <div class="card">
+            <img src="./images/wengang-zhai-_fOL6ebfECQ-unsplash.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
+                        <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+</svg></button>
+        </div> 
+     </section>
+ </main>
+ <footer>
+     <p>Visit us at <a href="https://www.dotaustere.com"><em>www.dotaustere.com</em></a></p>
+ </footer>  
+</body>
+</html>

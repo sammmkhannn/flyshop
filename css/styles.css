@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: honeydew;
+}
+/* header::before {
+  content: "";
+  height: 300px;
+  width: 100%;
+} */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+header,
+.logo {
+  background-color: plum;
+}
+.search {
+  height: auto;
+  width: auto;
+  background-color: honeydew;
+  border-radius: 8px;
+}
+#search {
+  height: 40px;
+  width: 300px;
+  outline: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px 5px;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  font-size: 18px;
+  background-color: honeydew;
+  border: none;
+  background-color: rgb(56, 17, 55);
+  color: honeydew;
+}
+
+button:hover {
+  box-shadow: 2px 4px 8px lightgrey;
+}
+
+button:active {
+  background-color: orchid;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+div.cart {
+  /* height: auto;
+  width: auto;
+  background: honeydew;
+  padding: 10px 10px;
+  box-shadow: 2px 4px 8px lightgrey; */
+}
+.products {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 20%;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 20px 20px;
+  box-shadow: 4px 8px 16px lightgrey;
+  position: relative;
+}
+.card > img {
+  height: 200px;
+  width: 100%;
+  object-fit: fill;
+}
+
+.card > p {
+  width: 100%;
+  height: auto%;
+  text-align: left;
+  padding: 20px 20px;
+}
+
+.add-to-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-shadow: 2px 4px 8px lightgrey;
+  background-color: plum;
+  color: black;
+}
+svg {
+  height: 20px;
+}
+
+.add-to-cart:hover {
+  color: rgb(56, 17, 55);
+}
+/*filter by*/
+.filters {
+  padding: 20px 20px;
+}
+.filters > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.filters > ul > li {
+  background-color: plum;
+  padding: 10px 20px;
+}
+footer {
+  height: 300px;
+  background-color: plum;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-register {
+  height: auto;
+  width: auto;
+}
+.login-register > button:nth-child(odd) {
+  background-color: white;
+  color: rgb(56, 17, 55);
+}
