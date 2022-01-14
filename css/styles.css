@@ -26,7 +26,7 @@ header,
 .search {
   height: auto;
   width: auto;
-  background-color: honeydew;
+  background-color: plum;
   border-radius: 8px;
 }
 #search {
@@ -95,6 +95,8 @@ div.cart {
   height: 200px;
   width: 100%;
   object-fit: fill;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .card > p {
@@ -146,5 +148,94 @@ footer {
 }
 .login-register > button:nth-child(odd) {
   background-color: white;
-  color: rgb(56, 17, 55);
+  color: ;
 }
+.dropbtn {
+  background-color: plum;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown-content li:hover {
+  background-color: thistle;
+}
+
+.search {
+  background-color: plum;
+  display: flex;
+  justify-content: center;
+}
+.search > button {
+  background-color: rgb(56, 17, 55);
+  color:white;
+}
+.login {
+  color: black;
+}
+
+.poster {
+  height: auto;
+  width: auto;
+  background-color: honeydew;
+  padding: 10px 10px;
+  box-shadow: 2px 4px 8px lightgrey;
+}
+.products {
+  gap: 20px;
+}
+
+/* 
+img:hover{
+  position:absolute;
+  z-index: 1;
+  height:100;
+  width:500px:
+  object-fit:contain;
+} */
+
+img:active{
+   height: "80%",
+    width: "200px",
+    objectFit: "cover"
+}
+
+.image:hover .galllery {
+  display: block;
+}
+
+

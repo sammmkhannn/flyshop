@@ -6,67 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./css/styles.css">
+      <script src="https://cdn.tailwindcss.com"></script>
+       <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script async src="./app.js"></script>
+      
 </head>
 <body>
  <header>
      <div class="logo">
-         <h1 class="logo">Store.pk</h1>
+         <h1 class="logo text-4xl">AirShop</h1>
      </div>
     <div class="search">
-        <input type="search" id="search" placeholder="search products">
-        <button type="button">Search</button>
+        <input type="search" id="search" placeholder="search your brand" required>
+        <button id="srch">Search</button>
     </div>
     <div class="login-register">
-    <button>Login</button>
-    <button>Register</button>
+    <button class="login">Login</button>
+    <button class="register">Register</button>
     </div>
-    <!-- <div class="cart"> 
+    <div class="cart"> 
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
 </svg>
-    </div> -->
+    </div>
  </header>   
  <main>
      <div class="filters">
          <h2>Filter By</h2>
          <ul>
-            <li>
-                Price
-                <select>
-                    <option>$20</option>
-                    <option>$30</option>
-                    <option>$50</option>
-                    <option>$100</option>
-                </select>   
+            <li class="dropdown">
+                    <button class="dropbtn">Gender</button>
+                <ul class="dropdown-content">
+                    <li onclick="searchByGender(event,'male')">Male</li>
+                    <li onclick="searchByGender(event,'female')">Female</li>
+                    <li onclick="searchByGender(event,'universal')">Universal</li>
+                    </ul>
+                </li>   
             </li>
-            <li>Size
-                <select>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>13</option>
-                    <option>16</option>
-                </select>
+
+            <li class="dropdown">
+                <button class="dropbtn">Style</button>
+                <ul class="dropdown-content">
+                    <li onclick="searchByStyle(event,'loafer')">Loafer</li>
+                    <li onclick="searchByStyle(event,'oxford')">Oxford</li>
+                    <li onclick="searchByStyle(event,'heels')">Heels</li>
+                    <li onclick="searchByStyle(event,'running')">Running</li>
+                    <li onclick="searchByStyle(event,'skateshoes')">Skateshoes</li>
+                    <li onclick="searchByStyle(event,'suede chuKka')">Suede Chukka</li>
+                    <li onclick="searchByStyle(event,'brogue')">Brogue</li>
+                    <li onclick="searchByStyle(event,'nike')">Nike</li>
+                </ul>
             </li>
-            <li>Color
-                <select>
-                    <option>Black</option>
-                    <option>Brown</option>
-                    <option>Blue</option>
-                    <option>Red</option>
-                </select>
+            <li class="dropdown">
+                <button class="dropbtn">Color</button>
+                <ul class="dropdown-content">
+                    <li onclick="searchByColor(event,'black')">Black</li>
+                    <li onclick="searchByColor(event,'brown')">Brown</li>
+                    <li onclick="searchByColor(event,'blue')">Blue</li>
+                    <li onclick="searchByColor(event,'red')">Red</li>
+                    <li onclick="searchByColor(event,'white')">White</li>
+                </ul>
             </li>
-            <li>Brand
-                <select>
-                    <option>Cat</option>
-                    <option>Camel</option>
-                    <option>Service</option>
-                </select>
+            <li class="dropdown">
+                <button class="dropbtn">Size</button>
+                <ul class="dropdown-content">
+                    <li onclick="searchBySize(event,'4')">4</li>
+                    <li onclick="searchBySize(event,'6')">6</li>
+                    <li onclick="searchBySize(event,'8')">8</li>
+                    <li onclick="searchBySize(event,'10')">10</li>
+                    <li onclick="searchBySize(event,'12')">12</li> 
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Price</button>
+                <ul class="dropdown-content">
+                    <li onclick="searchByPrice(event,'$10')">$10</li>
+                    <li onclick="searchByPrice(event,'$20')">$20</li>
+                    <li onclick="searchByPrice(event,'$30')">$30</li>
+                    <li onclick="searchByPrice(event,'$40')">$40</li>
+                </ul>
             </li>
          </ul>
      </div>
      <section class="products">
-        <div class="card">
+        <!-- <div class="card">
             <img src="./images/pexels-mstudio-1240892.jpg" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
             <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -107,7 +130,7 @@
          <div class="card">
             <img src="./images/pexels-web-donut-19090.jpg" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsum reprehenderit expedita quia consectetur nobis distinctio eius ducimus explicabo? Dignissimos praesentium deleniti expedita nam?</p>
-                        <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <button class="add-to-cart text-center bg-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
   <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
 </svg></button>
         </div> 
@@ -145,11 +168,20 @@
                         <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
   <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
 </svg></button>
-        </div> 
+        </div>  -->
+     </section>
+     <section class="poster">
+        <img src="images/poster.jpg" alt="poster image">
+        <h2 class="text-2xl text-center pt-3">Men Winter Boots</h2>
      </section>
  </main>
+ <div >
+
+ </div>
  <footer>
      <p>Visit us at <a href="https://www.dotaustere.com"><em>www.dotaustere.com</em></a></p>
  </footer>  
+
 </body>
 </html>
+
