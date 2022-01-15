@@ -239,3 +239,30 @@ img:active{
 }
 
 
+#wishlist{
+  height:20px;
+  width:40px;
+  padding:5px 5px;
+  border-radius: 100%;
+  background-color: white;
+
+}
+
+#cartList {
+ height:auto;
+ width:80%;
+ margin:auto;
+ background-color: honeydew;
+ display:flex;
+ justify-content:center;
+  align-items:center;
+  column-gap: 20px;
+
+}
+
+h1{
+  background-color: plum;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}

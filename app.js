@@ -30,6 +30,9 @@ const View = (text, styles) => {
 
 //the card element
 const Card = (src, text, images, styles) => {
+  //decriptions page
+  let decription = document.createElement("a");
+  decription.href = "../description/description.html";
   let card = document.createElement("div");
   let container = document.createElement("div");
   container.style.display = "flex";
@@ -61,11 +64,13 @@ const Card = (src, text, images, styles) => {
       img.style.transition = "all 0.5s ease-in-out";
       img.style.height = "100%";
       img.style.width = "100%";
+      img.style.position = "relate";
     });
     img.addEventListener("mouseout", () => {
       img.style.transition = "all 0.5s ease-in-out";
       img.style.height = "80px";
       img.style.width = "100px";
+      img.style.position = "static";
     });
     gallery.appendChild(img);
   }
@@ -95,14 +100,16 @@ const Card = (src, text, images, styles) => {
       cart = [];
     }
     cart.push({
+      //add an id attribute to the element
+
+      id: src,
       src: src,
       images: images,
-      price: styles.price,
-      style: styles.style,
-      color: styles.color,
-      size: styles.size,
+      price: text,
+      style: styles,
     });
-    alert("saved to local storage");
+
+    document.querySelector("#wishlist").innerHTML = cart.length;
     localStorage.setItem("cart", JSON.stringify(cart));
   });
 
@@ -114,8 +121,9 @@ const Card = (src, text, images, styles) => {
   for (let stl in styles.card) {
     card.style[stl] = styles.card[stl];
   }
-
-  return card;
+  //wrap the card in a link
+  decription.appendChild(card);
+  return decription;
 };
 
 // the image element
@@ -162,6 +170,9 @@ let styles = {
 };
 let text = "price:";
 $(document).ready(function () {
+  document.getElementById("wishlist").innerHTML = JSON.parse(
+    localStorage.getItem("cart")
+  ).length;
   $.getJSON("boots.json", function (jd) {
     for (let j in jd) {
       let stage = document.querySelector(".products");

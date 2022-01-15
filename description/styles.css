@@ -1,0 +1,167 @@
+
+.container {
+  /* border: 2px solid black; */
+  margin: 20px;
+  display: flex;
+  padding: 20px;
+}
+.first_div {
+  width: 10%;
+}
+.first_div img {
+  width: 100%;
+  padding: 20px;
+  display: block;
+  border-bottom:2PX solid rgb(70, 66, 66); 
+}
+.first_div img:hover {
+  border-bottom: 2px solid black;
+  box-shadow: 2px 3px 4px 1px rgb(114, 61, 61);
+  cursor: pointer;
+  background: wheat;
+}
+.secound_div {
+  /* border: 2px solid red; */
+  text-align: center;
+  height: 60%;
+  width: 40%;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+.secound_div:hover {
+  cursor: pointer;
+}
+.Detail{
+  display:flex;
+  width: 50%;
+  /* border:1px solid red; */
+  
+}
+.Off{
+  color: rgb(121, 50, 50);
+  font-weight: 600;
+  margin-top:30px;
+   height: 30px;
+  width: 20%;
+
+}
+.Off :hover{
+background-color: wheat;
+
+}
+.Off span{
+  padding:30px;
+  font-weight: 400000px;
+  border-radius: 50%;
+  border: 3px solid rgb(247, 10, 10);
+}
+.Main-Detail{
+
+  line-height: 1rem;
+   width:80% ;
+  /* border: 2px black solid; */
+}
+.Main-Detail i{
+color: rgb(66, 66, 30);
+}
+.Main-Detail i:hover{
+  color: rgb(66, 66, 30);
+  cursor: pointer;
+  color: rgb(73, 88, 231);
+  }
+.shoe_selection img{
+  width: 15%; 
+  border: 2px solid red;
+  border-radius: 50%;
+  height: 60px;
+  padding: 5px;
+}
+.shoe_selection img:hover{
+  width: 15%; 
+  border: 2px solid rgb(80, 180, 13);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 60px;
+  padding: 5px;
+}
+#size{
+  /* border: 2px solid red */
+  /* height: 130px; */
+  display: grid;
+ grid-template-rows: 20px  20px  20px 20px;
+ grid-template-columns: 1fr 1fr 1fr 1fr ;  
+ grid-gap: 30px;
+}
+.siza_1{
+
+  text-align: center;
+  padding: 20px;
+  height: 25vh;  
+  
+}
+.num{
+  /* border: 1px solid red; */
+  padding: 10px;
+  box-shadow: 1px 2px 3px 4px rgb(68, 54, 54);
+}
+.num:hover{
+  width: 60%;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px 4px rgb(133, 66, 66);
+}
+.payments button{
+width: 30%;
+text-align: left;
+padding: 20px;
+border: 3PX solid blue;
+cursor: pointer;
+border-radius:20PX;
+box-shadow: 1px 2px 3px 4px black; 
+}
+.last_first_buttons button{
+  margin-top: 30px;
+  text-align: left;
+  padding: 20px;
+  border: none;
+  background-color:rgb(82, 155, 224);
+  cursor: pointer;
+  width: 80%;
+}
+.last_first_buttons button:hover{
+  box-shadow: 1px 2px 3px 2px rgb(37, 37, 37);
+}
+.last_secound_buttons button{
+  margin-top: 30px;
+  text-align: left;
+  padding: 20px;
+  border: none;
+  background-color:rgb(224, 82, 188);
+  cursor: pointer;
+  width: 80%;
+}
+.last_secound_buttons button:hover{
+  box-shadow: 1px 2px 3px 2px rgb(58, 36, 53);
+  cursor: pointer;
+}
+.payment_methods{
+  border: 2px solid rgb(114, 113, 113);
+  margin-top: 15px;
+  padding: 20px;
+  box-shadow: 1px 2px 3px 4px rgb(92, 91, 91);
+}
+.payment_methods h2{
+  text-align: center;
+border-bottom: 2px solid rgb(83, 76, 76);
+padding-bottom: 20px;
+}
+
+.payment_methods img{
+  width: 20%;
+  margin-left: 20px;
+  height: 10vh;
+}
+.payment_methods img:hover{
+box-shadow: 2PX 3PX 10PX rgb(80, 15, 15);
+cursor: pointer;
+}
+
